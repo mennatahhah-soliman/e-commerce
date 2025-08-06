@@ -14,7 +14,8 @@ const Footer = () => {
           color: "white",
           overflow: "hidden",
         }}>
-        <img  src="/images/footer1.png"  alt="discount"
+        <img src={`${process.env.PUBLIC_URL}/images/footer1.png`}
+  alt="discount"
           style={{
             position: "absolute",
             right: "250px",
@@ -136,8 +137,10 @@ const Footer = () => {
         </span>
       </div>
       <div className="d-flex align-items-center gap-2">
-        <img src="/images/footer2.png" alt="App Store" style={{ height: "30px" }} />
-        <img src="/images/footer3.png" alt="Google Play" style={{ height: "30px" }} />
+        <img src={`${process.env.PUBLIC_URL}/images/footer2.png`}
+alt="App Store" style={{ height: "30px" }} />
+        <img src={`${process.env.PUBLIC_URL}/images/footer3.png`}
+ alt="Google Play" style={{ height: "30px" }} />
       </div>
       <div className="d-flex align-items-center gap-2">
         <FontAwesomeIcon icon={faFacebook} style={{ fontSize: '20px', color: '#35AFA0' }} />

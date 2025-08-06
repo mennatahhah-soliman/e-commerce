@@ -94,7 +94,8 @@ const Checkout = () => {
               cart.map((item) => (
                 <div key={item.id} className="d-flex align-items-center mb-3 border-bottom pb-3">
                   <img
-                    src={item.image}
+                    src={`${process.env.PUBLIC_URL}${item.image}`}
+
                     alt={item.name}
                     style={{ width: "80px", height: "80px", objectFit: "cover", borderRadius: "8px" }}
                     className="me-3"

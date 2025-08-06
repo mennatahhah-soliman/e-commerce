@@ -14,7 +14,7 @@ code {
 
 
 
-/* About.css */
+
 
 .custom-box {
   position: absolute;
@@ -29,7 +29,7 @@ code {
   z-index: 1;
 }
 
-/* لما الشاشة تكون صغيرة أو متوسطة */
+
 @media (max-width: 991.98px) {
   .custom-box {
     position: static !important;
