@@ -7,7 +7,8 @@ const About = () => {
         style={{
           position: "relative",
           height: "600px",
-          backgroundImage: "url('/images/about-hero1.jpg')",
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/about-hero1.jpg)`,
+
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}  >
@@ -63,7 +64,8 @@ const About = () => {
         <div className="row align-items-start">
           <div className="col-md-6 mb-4 position-relative" style={{ position: 'relative' }}>
             <img
-              src="/images/about-hero.png"
+              src={`${process.env.PUBLIC_URL}/images/about-hero.png`}
+
               alt="CEO"
               className="img-fluid w-100"
               style={{

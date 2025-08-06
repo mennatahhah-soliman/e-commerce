@@ -7,7 +7,7 @@ const Blog = () => {
         <div className="col-lg-8">
           <div className="mb-5">
             <img
-              src="/images/blog1.png" 
+              src={`${process.env.PUBLIC_URL}/images/blog1.png`}
               alt="blog1"
               className="img-fluid rounded"  />
             <h5 className="mt-3" style={{color:'#9B9BB4',fontSize:'13px',fontWeight:'600px',fontFamily:'Inter'}}>GROCERY</h5>
@@ -21,7 +21,8 @@ vitae suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ult
           </div>
           <div className="mb-5">
             <img
-              src="/images/blog2.png" 
+              src={`${process.env.PUBLIC_URL}/images/blog2.png`}
+ 
               alt="blog2"
               className="img-fluid rounded"
             />
@@ -43,7 +44,8 @@ vitae suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ult
     <ul className="list-unstyled" style={{width:'230px' , color:'#000000ff',fontSize:'17px',fontWeight:'500px',fontFamily:'Inter'}}>
       <li className="mb-3 d-flex align-items-center gap-2">
         <img
-          src="/images/blog11.png"
+          src={`${process.env.PUBLIC_URL}/images/blog11.png`}
+
           alt="Post"
           className="rounded-circle"
           style={{ width: '50px', height: '50px', objectFit: 'cover' }}
@@ -54,7 +56,8 @@ vitae suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ult
       </li>
       <li className="mb-3 d-flex align-items-center gap-2">
         <img
-          src="/images/blog22.png"
+          src={`${process.env.PUBLIC_URL}/images/blog22.png`}
+
           alt="Post"
           className="rounded-circle"
           style={{width: '50px', height: '50px', objectFit: 'cover' }}
@@ -65,7 +68,8 @@ vitae suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ult
       </li>
       <li className="mb-3 d-flex align-items-center gap-2">
         <img
-          src="/images/blog3.png"
+          src={`${process.env.PUBLIC_URL}/images/blog3.png`}
+
           alt="Post"
           className="rounded-circle"
           style={{ width: '50px', height: '50px', objectFit: 'cover' }}
@@ -90,7 +94,8 @@ vitae suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ult
             <h5 className="fw-bold" style={{width:'230px' , color:'#191313ff',fontSize:'17px',fontWeight:'600px',fontFamily:'Inter',marginBottom:'30px'}}>Widget Banner</h5>
           <div className="mb-5">
             <img
-              src="/images/shop-fil.png"
+              src={`${process.env.PUBLIC_URL}/images/shop-fil.png`}
+
               alt="Banner"
               className="img-fluid rounded"
             />

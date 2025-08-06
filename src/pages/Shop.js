@@ -22,6 +22,7 @@ const Shop = () => {
         setQuantities(initialQuantities);
       });
   }, []);
+  
   const handleIncrement = (id) => {
     setQuantities((prev) => ({ ...prev, [id]: prev[id] + 1 }));
   };
@@ -36,126 +37,174 @@ const Shop = () => {
     setSelectedProduct(null);
     setMainImage(null);
   };
+  
   return (
     <div className="container-fluid mt-4">
       <div className="row">
         {/* Sidebar */}
-<div className="col-lg-2 mb-4">
-  <div
-    style={{
-      padding: '20px',
-      border: 'none',
-    }}
-  >
-    {/* Product Categories */}
-    <h4 className=" mb-3" style={{
-              color:' #202435',
-              fontFamily:'Dosis',
+        <div className="col-lg-2 mb-4">
+          <div
+            style={{
+              padding: '20px',
+              border: 'none',
+            }}
+          >
+            {/* Product Categories */}
+            <h4
+              className="mb-3"
+              style={{
+                color: ' #202435',
+                fontFamily: 'Dosis',
                 fontSize: '19px',
-                fontWeight:'600',
-              }}>Product Categories</h4>
-    <div className="mb-3" style={{
-              color:' #71778E',
-              fontFamily:'Inter',
+                fontWeight: '600',
+              }}
+            >
+              Product Categories
+            </h4>
+            <div
+              className="mb-3"
+              style={{
+                color: ' #71778E',
+                fontFamily: 'Inter',
                 fontSize: '16px',
-                fontWeight:'400',
-              }}>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="categoryFruits" />
-        <label className="form-check-label" htmlFor="categoryFruits">Beverages</label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="categoryVegetables" />
-        <label className="form-check-label" htmlFor="categoryVegetables">Biscuits & Snacks</label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="categoryDairy" />
-        <label className="form-check-label" htmlFor="categoryDairy">Breads & Bakery</label>
-      </div>
-        <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="categoryFruits" />
-        <label className="form-check-label" htmlFor="categoryFruits">Breakfast & Dairy</label>
-      </div>
-        <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="categoryFruits" />
-        <label className="form-check-label" htmlFor="categoryFruits">Frozen Foods</label>
-      </div>
-    </div>
+                fontWeight: '400',
+              }}
+            >
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="categoryFruits" />
+                <label className="form-check-label" htmlFor="categoryFruits">
+                  Beverages
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="categoryVegetables" />
+                <label className="form-check-label" htmlFor="categoryVegetables">
+                  Biscuits & Snacks
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="categoryDairy" />
+                <label className="form-check-label" htmlFor="categoryDairy">
+                  Breads & Bakery
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="categoryFruits" />
+                <label className="form-check-label" htmlFor="categoryFruits">
+                  Breakfast & Dairy
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="categoryFruits" />
+                <label className="form-check-label" htmlFor="categoryFruits">
+                  Frozen Foods
+                </label>
+              </div>
+            </div>
 
-    {/* Brands */}
-    <h4 className="mb-3 mt-4" style={{
-              color:' #202435',
-              fontFamily:'Dosis',
+            {/* Brands */}
+            <h4
+              className="mb-3 mt-4"
+              style={{
+                color: ' #202435',
+                fontFamily: 'Dosis',
                 fontSize: '19px',
-                fontWeight:'600',
-              }}>Brands</h4>
-    <div className="mb-3" style={{
-              color:' #71778E',
-              fontFamily:'Inter',
+                fontWeight: '600',
+              }}
+            >
+              Brands
+            </h4>
+            <div
+              className="mb-3"
+              style={{
+                color: ' #71778E',
+                fontFamily: 'Inter',
                 fontSize: '16px',
-                fontWeight:'400',
-              }}>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="brandBerryLand" />
-        <label className="form-check-label" htmlFor="brandBerryLand">Frito Lay</label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="brandAngies" />
-        <label className="form-check-label" htmlFor="brandAngies">Quaker</label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="brandChallenge" />
-        <label className="form-check-label" htmlFor="brandChallenge">Cola</label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="brandChallenge" />
-        <label className="form-check-label" htmlFor="brandChallenge">Welch's</label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="brandChallenge" />
-        <label className="form-check-label" htmlFor="brandChallenge">Oreo</label>
-      </div>
-    </div>
+                fontWeight: '400',
+              }}
+            >
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="brandBerryLand" />
+                <label className="form-check-label" htmlFor="brandBerryLand">
+                  Frito Lay
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="brandAngies" />
+                <label className="form-check-label" htmlFor="brandAngies">
+                  Quaker
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="brandChallenge" />
+                <label className="form-check-label" htmlFor="brandChallenge">
+                  Cola
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="brandChallenge" />
+                <label className="form-check-label" htmlFor="brandChallenge">
+                  Welch's
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="brandChallenge" />
+                <label className="form-check-label" htmlFor="brandChallenge">
+                  Oreo
+                </label>
+              </div>
+            </div>
 
-    {/* Availability */}
-    <h4 className="mb-3 mt-4" style={{
-              color:' #202435',
-              fontFamily:'Dosis',
+            {/* Availability */}
+            <h4
+              className="mb-3 mt-4"
+              style={{
+                color: ' #202435',
+                fontFamily: 'Dosis',
                 fontSize: '19px',
-                fontWeight:'600',
-              }}>Availability</h4>
-    <div className="mb-3" style={{
-              color:' #71778E',
-              fontFamily:'Inter',
+                fontWeight: '600',
+              }}
+            >
+              Availability
+            </h4>
+            <div
+              className="mb-3"
+              style={{
+                color: ' #71778E',
+                fontFamily: 'Inter',
                 fontSize: '16px',
-                fontWeight:'400',
-              }}>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="inStock" />
-        <label className="form-check-label" htmlFor="inStock">In Stock</label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="checkbox" id="outOfStock" />
-        <label className="form-check-label" htmlFor="outOfStock">Out of Stock</label>
-      </div>
-    </div>
+                fontWeight: '400',
+              }}
+            >
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="inStock" />
+                <label className="form-check-label" htmlFor="inStock">
+                  In Stock
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" id="outOfStock" />
+                <label className="form-check-label" htmlFor="outOfStock">
+                  Out of Stock
+                </label>
+              </div>
+            </div>
 
-    
-    <div className="mt-4">
-      <img
-        src="/images/shop-fil.png"
-        alt="Sidebar Banner"
-        style={{ width: '100%', border: 'none' }}
-      />
-    </div>
-  </div>
-</div>
+            <div className="mt-4">
+              <img
+                src={`${process.env.PUBLIC_URL}/images/shop-fil.png`}
+                alt="Sidebar Banner"
+                style={{ width: '100%', border: 'none' }}
+              />
+            </div>
+          </div>
+        </div>
 
         <div className="col-lg-9">
           {/* Hero Section */}
           <div className="position-relative mb-4 w-100" style={{ height: '240.47px' }}>
             <img
-              src="/images/shop-her.png"
+              src={`${process.env.PUBLIC_URL}/images/shop-her.png`}
               alt="Shop Banner"
               className="w-100 h-100"
               style={{
@@ -173,25 +222,46 @@ const Shop = () => {
                 fontSize: '25px',
               }}
             >
-            <span   style={{
-              color:' #202435',
-              fontFamily:'Inter',
-                fontSize: '24px',
-                fontWeight:'200',
-              }}>  Organic Meals Prepared </span> <br />
-              <span  style={{
-              color:' #202435',
-              fontFamily:'Inter',
-                fontSize: '30px',
-                fontWeight:'600',
-              }}>Delivered to <span style={{
-              color:'  #00B853'}} >your Home</span> </span><br />
-              <span   style={{
-              color:' #9B9BB4',
-              fontFamily:'Inter',
-                fontSize: '12px',
-                fontWeight:'400',
-              }}>Fully prepared & delivered nationwide</span>
+              <span
+                style={{
+                  color: ' #202435',
+                  fontFamily: 'Inter',
+                  fontSize: '24px',
+                  fontWeight: '200',
+                }}
+              >
+                {' '}
+                Organic Meals Prepared{' '}
+              </span>{' '}
+              <br />
+              <span
+                style={{
+                  color: ' #202435',
+                  fontFamily: 'Inter',
+                  fontSize: '30px',
+                  fontWeight: '600',
+                }}
+              >
+                Delivered to{' '}
+                <span
+                  style={{
+                    color: '  #00B853',
+                  }}
+                >
+                  your Home
+                </span>{' '}
+              </span>
+              <br />
+              <span
+                style={{
+                  color: ' #9B9BB4',
+                  fontFamily: 'Inter',
+                  fontSize: '12px',
+                  fontWeight: '400',
+                }}
+              >
+                Fully prepared & delivered nationwide
+              </span>
             </h2>
           </div>
 
@@ -209,8 +279,9 @@ const Shop = () => {
               62 products
             </p>
             <div className="d-flex align-items-center">
-              <span className="me-2" style={{ fontSize: '14px' }}>Sort by:Alphabetically, A-Z</span>
-              
+              <span className="me-2" style={{ fontSize: '14px' }}>
+                Sort by:Alphabetically, A-Z
+              </span>
             </div>
           </div>
 
@@ -236,7 +307,7 @@ const Shop = () => {
                   }}
                 >
                   <img
-                    src={product.image}
+                    src={`${process.env.PUBLIC_URL}${product.image}`}
                     alt={product.title}
                     style={{
                       height: '200px',
@@ -246,19 +317,30 @@ const Shop = () => {
                     }}
                   />
                   <div className="card-body p-2 text-center">
-                    <h6 className="fw-bold" style={{ fontSize: '15px' }}>{product.title}</h6>
-                    <p className="text-success fw-bold mb-1" style={{ fontSize: '13px' }}>IN STOCK</p>
+                    <h6 className="fw-bold" style={{ fontSize: '15px' }}>
+                      {product.title}
+                    </h6>
+                    <p className="text-success fw-bold mb-1" style={{ fontSize: '13px' }}>
+                      IN STOCK
+                    </p>
                     <div className="d-flex justify-content-center align-items-center mb-2">
                       {[...Array(5)].map((_, i) => (
-                        <span key={i} className="text-warning">★</span>
+                        <span key={i} className="text-warning">
+                          ★
+                        </span>
                       ))}
-                      <span className="text-muted ms-2" style={{ fontSize: '12px' }}>1 review</span>
+                      <span className="text-muted ms-2" style={{ fontSize: '12px' }}>
+                        1 review
+                      </span>
                     </div>
                     <h5 className="text-danger fw-bold">${product.price}</h5>
                   </div>
                   <div className="d-flex justify-content-between align-items-center px-3 pb-3">
                     <button
-                      onClick={(e) => { e.stopPropagation(); handleDecrement(product.id); }}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDecrement(product.id);
+                      }}
                       className="btn btn-light text-dark border"
                       style={{ borderRadius: '50%' }}
                     >
@@ -266,7 +348,10 @@ const Shop = () => {
                     </button>
                     <div className="fw-bold">{quantities[product.id]}</div>
                     <button
-                      onClick={(e) => { e.stopPropagation(); handleIncrement(product.id); }}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleIncrement(product.id);
+                      }}
                       className="btn text-white border"
                       style={{ backgroundColor: '#FFD700', borderRadius: '50%' }}
                     >
@@ -286,14 +371,17 @@ const Shop = () => {
           className="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center"
           style={{ zIndex: 1050 }}
         >
-          <div className="bg-white p-4 rounded" style={{ maxWidth: '800px', width: '90%', maxHeight: '90%', overflowY: 'auto' }}>
+          <div
+            className="bg-white p-4 rounded"
+            style={{ maxWidth: '800px', width: '90%', maxHeight: '90%', overflowY: 'auto' }}
+          >
             <div className="text-end">
               <button onClick={closePopup} className="btn-close"></button>
             </div>
             <div className="row">
               <div className="col-md-6">
                 <img
-                  src={mainImage || selectedProduct.image}
+                  src={mainImage || `${process.env.PUBLIC_URL}${selectedProduct.image}`}
                   alt={selectedProduct.title}
                   className="img-fluid rounded mb-3"
                 />
@@ -301,7 +389,7 @@ const Shop = () => {
                   {(selectedProduct.extraImages || [selectedProduct.image]).map((img, idx) => (
                     <img
                       key={idx}
-                      src={img}
+                      src={`${process.env.PUBLIC_URL}${img}`}
                       alt={`Thumbnail ${idx}`}
                       className="img-thumbnail"
                       style={{ width: '80px', height: '80px', objectFit: 'cover', cursor: 'pointer' }}
@@ -311,83 +399,100 @@ const Shop = () => {
                 </div>
               </div>
               <div className="col-md-6">
-                <h3  style={{
-              color:'#35AFA0',
-                fontSize: '22px',
-                fontWeight:'500',
-              }}>{selectedProduct.title}</h3>
-                <p style={{
-              color:'#000000ff'}}>{selectedProduct.brand}</p>
-                <p style={{
-              color:' #3f3f3fa4',
-                fontSize: '16px',
-                fontWeight:'500',
-              }}>{selectedProduct.description}</p>
-                <p style={{
-              color:' #3f3f3fa4',
-                fontSize: '16px',
-                fontWeight:'500',
-              }}><strong style={{
-              color:'#35AFA0'}}>Ingredients:</strong> {selectedProduct.ingredients?.join(', ')}</p>
-                <p className="text-danger"> <strong style={{
-              color:'#35AFA0'}}>Delivery:</strong > {selectedProduct.delivery}</p>
+                <h3
+                  style={{
+                    color: '#35AFA0',
+                    fontSize: '22px',
+                    fontWeight: '500',
+                  }}
+                >
+                  {selectedProduct.title}
+                </h3>
+                <p style={{ color: '#000000ff' }}>{selectedProduct.brand}</p>
+                <p
+                  style={{
+                    color: ' #3f3f3fa4',
+                    fontSize: '16px',
+                    fontWeight: '500',
+                  }}
+                >
+                  {selectedProduct.description}
+                </p>
+                <p
+                  style={{
+                    color: ' #3f3f3fa4',
+                    fontSize: '16px',
+                    fontWeight: '500',
+                  }}
+                >
+                  <strong style={{ color: '#35AFA0' }}>Ingredients:</strong>{' '}
+                  {selectedProduct.ingredients?.join(', ')}
+                </p>
+                <p className="text-danger">
+                  {' '}
+                  <strong style={{ color: '#35AFA0' }}>Delivery:</strong> {selectedProduct.delivery}
+                </p>
                 <h4 className="text-danger">${selectedProduct.price}</h4>
-            <div
-  className="d-flex justify-content-center align-items-center"
-  style={{
-    backgroundColor: '#F3F5F9',
-    borderRadius: '8px',
-    height: '50px',         
-    width: '100%',
-  }}
->
-  <div className="d-flex align-items-center gap-3">
-    <button
-      onClick={(e) => {
-        e.stopPropagation();
-        handleDecrement(selectedProduct.id);
-      }}
-      className="btn  text-dark "  >
-      <FaMinus />
-    </button>
+                <div
+                  className="d-flex justify-content-center align-items-center"
+                  style={{
+                    backgroundColor: '#F3F5F9',
+                    borderRadius: '8px',
+                    height: '50px',
+                    width: '100%',
+                  }}
+                >
+                  <div className="d-flex align-items-center gap-3">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDecrement(selectedProduct.id);
+                      }}
+                      className="btn  text-dark "
+                    >
+                      <FaMinus />
+                    </button>
 
-    <div className="fw-bold fs-5 text-center" style={{ minWidth: '30px' }}>
-      {quantities[selectedProduct.id]}
-    </div>
+                    <div className="fw-bold fs-5 text-center" style={{ minWidth: '30px' }}>
+                      {quantities[selectedProduct.id]}
+                    </div>
 
-    <button
-      onClick={(e) => {
-        e.stopPropagation();
-        handleIncrement(selectedProduct.id);
-      }}
-      className="btn text-black ">
-      <FaPlus />
-    </button>
-  </div>
-</div>
-<button
-  className="btn mt-3 w-100 text-white"
-  style={{ backgroundColor: '#35AFA0' }}
-  onClick={() => {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleIncrement(selectedProduct.id);
+                      }}
+                      className="btn text-black "
+                    >
+                      <FaPlus />
+                    </button>
+                  </div>
+                </div>
+                <button
+                  className="btn mt-3 w-100 text-white"
+                  style={{ backgroundColor: '#35AFA0' }}
+                  onClick={() => {
+                    const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    const existingProduct = cart.find((item) => item.id === selectedProduct.id);
+                    const existingProduct = cart.find((item) => item.id === selectedProduct.id);
 
-    if (existingProduct) {
-      existingProduct.quantity += quantities[selectedProduct.id] || 1;
-    } else {
-      cart.push({
-        id: selectedProduct.id,
-        name: selectedProduct.title,
-        price: selectedProduct.price,
-        image: selectedProduct.image,
-        quantity: quantities[selectedProduct.id] || 1
-      });
-    }
-    localStorage.setItem("cart", JSON.stringify(cart));
-    navigate('/Checkout');  }}>
-  Add to Cart
-</button>
+                    if (existingProduct) {
+                      existingProduct.quantity += quantities[selectedProduct.id] || 1;
+                    } else {
+                      cart.push({
+                        id: selectedProduct.id,
+                        name: selectedProduct.title,
+                        price: selectedProduct.price,
+                        image: selectedProduct.image,
+                        quantity: quantities[selectedProduct.id] || 1,
+                      });
+                    }
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    navigate('/Checkout');
+                  }}
+                >
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>
