@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* About.css */
+
+.custom-box {
+  position: absolute;
+  bottom: 0;
+  left: 330px;
+  width: 850px;
+  background-color: white;
+  padding: 40px;
+  font-size: 15px;
+  text-align: justify;
+  font-family: Inter;
+  z-index: 1;
+}
+
+/* لما الشاشة تكون صغيرة أو متوسطة */
+@media (max-width: 991.98px) {
+  .custom-box {
+    position: static !important;
+    width: 100% !important;
+    margin-top: 20px;
+  }
+}
+

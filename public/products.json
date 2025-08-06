@@ -1,0 +1,112 @@
+[
+{
+  "id": 1,
+  "title": "100% Butter French Croissants",
+  "brand": "Maison du Croissant",
+  "price": 1.44,
+  "image": "/images/shop1.png",
+  "extraImages": ["/images/shop5.png", "/images/shop6.png"],
+  "description": "Authentic French croissants made with 100% pure butter. Flaky on the outside, soft and buttery on the inside — perfect for breakfast or an afternoon treat.",
+  "delivery": "$5",
+  "ingredients": ["Wheat Flour", "Butter (Milk)", "Yeast", "Sugar", "Salt", "Eggs"],
+  "quantity": 1,
+  "available":50
+},
+
+  
+  {
+  "id": 2,
+  "title": "All Natural Italian-Style Chicken ",
+  "brand": "Bella Cucina",
+  "price": 1.44,
+  "image": "/images/shop2.png",
+  "extraImages": ["/images/shop5.png", "/images/shop6.png"],
+  "description": "Tender and flavorful chicken meatballs made with authentic Italian herbs and spices. Fully cooked and ready to enjoy with pasta, in a sandwich, or on their own.",
+  "delivery": "$5",
+  "ingredients": ["Chicken", "Breadcrumbs", "Parmesan Cheese", "Garlic", "Parsley", "Salt", "Pepper"],
+  "quantity": 1
+    ,"available":33
+  },
+{
+  "id": 3,
+  "title": "American Cheese Singles",
+  "brand": "Kraft",
+  "price": 2.99,
+  "image": "/images/shop3.png",
+  "extraImages": ["/images/shop6.png", "/images/shop2.png"],
+  "description": "Smooth, creamy slices of classic American cheese – perfect for burgers, sandwiches, or melting into your favorite dishes.",
+  "delivery": "$3",
+  "ingredients": ["Pasteurized Milk", "Whey", "Cheddar Cheese", "Milkfat", "Salt"],
+  "quantity": 1
+  ,"available":25
+}
+,
+  {
+  "id": 4,
+  "title": "Angie's Boomchickapop Sweet & Salty",
+  "brand": "Angie's",
+  "price": 3.49,
+  "image": "/images/shop4.png",
+  "extraImages": ["/images/shop5.png", "/images/shop6.png"],
+  "description": "Light, crunchy, and made with simple ingredients, Boomchickapop kettle corn is a delicious snack that's both sweet and salty.",
+  "delivery": "$5",
+  "ingredients": ["Popcorn", "Sunflower Oil", "Cane Sugar", "Sea Salt"],
+  "quantity": 1
+  ,"available":65
+}
+,
+  {
+  "id": 5,
+  "title": "Blue Diamond Almonds Lightly Salted",
+  "brand": "Blue Diamond",
+  "price": 5.99,
+  "image": "/images/shop5.png",
+  "extraImages": ["/images/shop8.png", "/images/shop6.png"],
+  "description": "Crunchy, roasted almonds with just the right amount of salt for a heart-healthy, protein-packed snack.",
+  "delivery": "$5",
+  "ingredients": ["Almonds", "Sea Salt"],
+  "quantity": 1
+  ,"available":25
+}
+,
+  {
+  "id": 6,
+  "title": "Blueberries – 1 Pint Package",
+  "brand": "Nature’s Touch",
+  "price": 4.29,
+  "image": "/images/shop6.png",
+  "extraImages": ["/images/shop5.png", "/images/shop7.png"],
+  "description": "Fresh, antioxidant-rich blueberries packed with flavor. Perfect for breakfast, baking, or healthy snacking.",
+  "delivery": "$5",
+  "ingredients": ["Fresh Blueberries"],
+  "quantity": 1
+  ,"available":70
+}
+,
+  {
+  "id": 7,
+  "title": "Canada Dry Ginger Ale - 2 L Bottle",
+  "brand": "Canada Dry",
+  "price": 2.19,
+  "image": "/images/shop7.png",
+  "extraImages": ["/images/shop5.png", "/images/shop6.png"],
+  "description": "A crisp and refreshing ginger ale with a classic taste. Great on its own or as a mixer.",
+  "delivery": "$5",
+  "ingredients": ["Carbonated Water", "High Fructose Corn Syrup", "Citric Acid", "Natural Flavors", "Preservatives"],
+  "quantity": 1
+}
+,
+  {
+  "id": 8,
+  "title": "Challenge Spreadable Butter",
+  "brand": "Challenge Dairy",
+  "price": 3.79,
+  "image": "/images/shop8.png",
+  "extraImages": ["/images/shop5.png", "/images/shop6.png"],
+  "description": "Smooth and creamy butter that’s easy to spread, even straight from the fridge. Perfect for toast, baking, and cooking.",
+  "delivery": "$5",
+  "ingredients": ["Pasteurized Cream", "Canola Oil", "Salt"],
+  "quantity": 1
+}
+
+]

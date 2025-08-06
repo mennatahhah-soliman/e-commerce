@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "/images/small1.png",
+    "name": "Beverages",
+    "items": 3
+  },
+  {
+    "id": 2,
+    "image": "/images/small2.jpg",
+    "name": "Breads & Bakery",
+    "items": 5
+  },
+  {
+    "id": 3,
+    "image": "/images/small3.png",
+    "name": "Biscuits & Snacks",
+    "items": 4
+  },
+  {
+    "id": 4,
+    "image": "/images/small4.png",
+    "name": "Breakfast & Dairy",
+    "items": 6
+  },
+    {
+    "id": 5,
+    "image": "/images/small5.png",
+    "name": "Frozen Foods",
+    "items": 6
+  },
+  {
+    "id": 6,
+    "image": "/images/small2.jpg",
+    "name": "Breads & Bakery",
+    "items": 5
+  },
+  {
+    "id": 7,
+    "image": "/images/small3.png",
+    "name": "Biscuits & Snacks",
+    "items": 4
+  },
+  {
+    "id": 8,
+    "image": "/images/small4.png",
+    "name": "Breakfast & Dairy",
+    "items": 6
+  },
+    {
+    "id": 9,
+    "image": "/images/small5.png",
+    "name": "Cold Drinks",
+    "items": 6
+  }
+]
