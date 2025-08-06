@@ -12,7 +12,7 @@ const Home = () => {
 
 
 useEffect(() => {
-  fetch("/products.json")
+  fetch(`${process.env.PUBLIC_URL}/products.json`)
     .then((res) => res.json())
     .then((data) => setMainProducts(data))
     .catch((err) => console.error("Error loading main products", err));
@@ -25,7 +25,8 @@ const [time, setTime] = useState({
     milliseconds: 49,
   });
   useEffect(() => {
-    fetch("/smallproduct.json")
+    fetch(`${process.env.PUBLIC_URL}/smallproduct.json`)
+
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error("Error loading products", err));
@@ -128,7 +129,7 @@ const [time, setTime] = useState({
       <div style={{
         width: '600px',
         height: '350px',
-backgroundImage: `url(/images/home1.png)`,
+backgroundImage: `url(${process.env.PUBLIC_URL}/images/home1.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         position: 'relative',
@@ -153,7 +154,7 @@ backgroundImage: `url(/images/home1.png)`,
       <div style={{
         width: '600px',
         height: '350px',
-        backgroundImage: `url(/images/home2.png)`,
+backgroundImage: `url(${process.env.PUBLIC_URL}/images/home2.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         position: 'relative',
@@ -203,7 +204,8 @@ backgroundImage: `url(/images/home1.png)`,
         onClick={() => navigate("/shop")}
       >
         <img
-          src={product.image}
+         src={`${process.env.PUBLIC_URL}/${product.image}`} 
+
           className="card-img-top mx-auto"
           alt={product.name}
           style={{
@@ -271,7 +273,8 @@ backgroundImage: `url(/images/home1.png)`,
       }}
     >
       <img
-        src={product.image}
+         src={`${process.env.PUBLIC_URL}/${product.image}`} 
+
         alt={product.title}
         style={{
           height: '190px',
@@ -313,7 +316,7 @@ backgroundImage: `url(/images/home1.png)`,
       <div style={{
         width: '350px',
         height: '230px',
-backgroundImage: `url(/images/crad1.png)`,
+backgroundImage: `url(${process.env.PUBLIC_URL}/images/crad1.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         position: 'relative',
@@ -336,8 +339,8 @@ backgroundImage: `url(/images/crad1.png)`,
       <div style={{
         width: '350px',
         height: '230px',
-backgroundImage: `url(/images/crad2.png)`,
-        backgroundSize: 'cover',
+backgroundImage: `url(${process.env.PUBLIC_URL}/images/crad2.png)`
+,        backgroundSize: 'cover',
         backgroundPosition: 'center',
         position: 'relative',
         color: 'black',
@@ -360,8 +363,8 @@ backgroundImage: `url(/images/crad2.png)`,
       <div style={{
         width: '350px',
         height: '230px',
-        backgroundImage: `url(/images/crad3.png)`,
-        backgroundSize: 'cover',
+backgroundImage: `url(${process.env.PUBLIC_URL}/images/crad3.png)`
+,        backgroundSize: 'cover',
         backgroundPosition: 'center',
         position: 'relative',
         color: '#fff',
@@ -405,7 +408,8 @@ backgroundImage: `url(/images/crad2.png)`,
       ))}
     </div>
             <div className="col-6 position-relative ">
-              <img src="/images/home8.png"  alt="Offer" style={{  width: '100%'  }}
+              <img src={`${process.env.PUBLIC_URL}/images/home8.png`}
+  alt="Offer" style={{  width: '100%'  }}
               />
               <div
                 className="position-absolute text-white offer-text"
@@ -439,7 +443,8 @@ backgroundImage: `url(/images/crad2.png)`,
                 overflow: 'hidden',
               }}
               onClick={() => navigate('/shop')}  >
-              <img  src={product.image} alt={product.title}
+              <img  src={`${process.env.PUBLIC_URL}/${product.image}`}
+ alt={product.title}
                 style={{
                   height: '190px',
                   objectFit: 'contain',
