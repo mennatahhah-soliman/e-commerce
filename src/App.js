@@ -10,22 +10,31 @@ import Checkout from './pages/Checkout';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import ScrollToTop from "./components/ScrollToTop";
+import { SearchProvider } from "./context/SearchContext";
+import { CartProvider } from "./context/CartContext";
+
 
 function App() {
   return (
-    <div className="App">
-      <ScrollToTop />
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} /> 
-        <Route path="/contact" element={<Contact />} /> 
-        <Route path="/shop" element={<Shop />} /> 
-        <Route path="/checkout" element={<Checkout />} /> 
-        <Route path="/about" element={<About />} /> 
-        <Route path="/blog" element={<Blog />} /> 
-      </Routes>
-      <Footer />
-    </div>
+    <CartProvider>
+     <SearchProvider> 
+      <div className="App">
+        <ScrollToTop />
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/contact" element={<Contact />} /> 
+          <Route path="/shop" element={<Shop />} /> 
+          <Route path="/checkout" element={<Checkout />} /> 
+          <Route path="/about" element={<About />} /> 
+          <Route path="/blog" element={<Blog />} /> 
+        </Routes>
+
+        <Footer />
+      </div>
+    </SearchProvider>
+    </CartProvider>
   );
 }
 

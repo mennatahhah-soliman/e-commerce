@@ -7,13 +7,12 @@ const Contact = () => {
   return (
     <div>
        <div className="contact-page py-5">
-      {/* Section: Get In Touch */}
       <div className="text-center mb-5" style={{fontFamily:'Inter'}}>
         <h2 className="" style={{fontWeight:'400px' ,fontSize:'40px'}}>Get In Touch</h2>
         <p className="text-black w-70 mx-auto">
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita <br />
 quaerat unde quam dolor culpa veritatis inventore, aut commodi eum <br />
-veniam vel.        </p>
+veniam vel.  </p>
       </div>
 
 <div className="container mb-5">

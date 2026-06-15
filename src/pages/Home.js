@@ -285,8 +285,9 @@ backgroundImage: `url(${process.env.PUBLIC_URL}/images/home2.png)`,
       />
       <div className="card-body text-center p-2" >
         <h6 className="fw-bold" style={{ fontSize: '14px' }}>{product.title}</h6>
-        <p className="text-success fw-bold mb-1" style={{ fontSize: '12px' }}>IN STOCK</p>
-        <div className="d-flex justify-content-center align-items-center mb-2">
+<p className={`fw-bold mb-1 ${ product.available > 0 ? 'text-success' : 'text-danger' }`} style={{ fontSize: '13px' }}>
+  {product.available > 0 ? 'IN STOCK' : 'OUT OF STOCK'}</p>      
+   <div className="d-flex justify-content-center align-items-center mb-2">
           {[...Array(5)].map((_, i) => (
             <span key={i} className="text-warning">★</span>
           ))}
@@ -454,7 +455,7 @@ backgroundImage: `url(${process.env.PUBLIC_URL}/images/crad3.png)`
               />
               <div className="card-body text-center p-2">
                 <h6 className="fw-bold" style={{ fontSize: '14px' }}>{product.title}</h6>
-                <p className="text-success fw-bold mb-1" style={{ fontSize: '12px' }}>IN STOCK</p>
+                <p className={`fw-bold mb-1 ${ product.available > 0 ? 'text-success' : 'text-danger'}`}style={{ fontSize: '13px' }}>{product.available > 0 ? 'IN STOCK' : 'OUT OF STOCK'}</p>
                 <div className="d-flex justify-content-center align-items-center mb-2">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-warning">★</span>
